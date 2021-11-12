@@ -98,6 +98,7 @@ figure {
 #image {
     max-width: 100%;
     height: auto;
+    display: block;
 
     border-radius: 20%;
 }
