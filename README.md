@@ -10,7 +10,7 @@ I decided to apply some of the new flexbox and CSS3 visual design I'd picked up 
 - The header text cannot be highlighted but it's not an image! This is to prevent an issue with Firefox where highlighting header text then scrolling would break it's position until a page refresh.
 - The header and flexbox elements also require several media width queries to prevent overlapping text. This could be better implement with CSS variable or calculations.
 
-## Failing the fCC Tribut Page tests
+## Failing the fCC Tribute Page tests
 This project actually partially fails a test:
 1. The <img> element should responsively resize, relative to the width of its parent element, without exceeding its original size. [FAIL]
 
