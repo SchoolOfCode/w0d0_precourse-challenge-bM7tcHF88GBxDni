@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@100;500&family=Luckiest+Guy&family=Playfair+Display:ital@1&display=swap');
+
+body {
+    margin: 0; /* getting rid of small, surrounding whitespace */
+}
+
+section { 
+    width: 60%;
+    margin-left: 20%;
+}
+
+#landing-page {
+    height: 70vh;
+    display: flex; /* less finnicky to center using this way */
+    justify-content: center;
+    align-items: center;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  }
+
+#title {
+    font-family: 'Luckiest Guy', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20vh;
+    font-style: italic;
+    text-align: center;
+
+    padding: 5%;
+
+    background-attachment: fixed; /* keeps image relative to viewport */
+    background-size: cover; /* stretch image */
+    background-position: 0%; /* center image */
+    background-repeat: no-repeat;
+}
+@media (max-width: 1150px) {
+    #title {
+        font-family: 'Luckiest Guy', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 15vh;
+        font-style: italic;
+        text-align: center;
+    
+        padding: 5%;
+    
+        background-attachment: fixed; /* keeps image relative to viewport */
+        background-size: cover; /* stretch image */
+        background-position: 0%; /* center image */
+        background-repeat: no-repeat;
+    }
+}
+@media (max-width: 800px) {
+    #title {
+        font-family: 'Luckiest Guy', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 10vh;
+        font-style: italic;
+        text-align: center;
+    
+        padding: 5%;
+    
+        background-attachment: fixed; /* keeps image relative to viewport */
+        background-size: cover; /* stretch image */
+        background-position: 0%; /* center image */
+        background-repeat: no-repeat;
+    }
+}
+
+#title span {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3vh;
+    font-weight: bold;
+    
+    background: url("https://www.teahub.io/photos/full/72-725349_space-galaxy-wallpaper-high-resolution-free-galaxy-high.jpg");
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+}
+
+figure {
+    position: relative;
+
+}
+
+#image {
+    max-width: 100%;
+    height: auto;
+
+    border-radius: 20%;
+}
+
+figcaption {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+
+    text-align: center;
+}
+
+#cast-and-crew {
+    display: flex;
+    
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+
+    flex-wrap: wrap;
+    
+    list-style: none;
+}
+
+li {
+    position: relative;
+    flex-basis: 300px;
+    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+
+    max-width: 80%;
+    padding: 1%;
+}
+
+
+li img {
+    max-width: 300px;
+
+    border-radius: 4%;
+}
+@media (max-width: 800px) {
+    li {
+        position: relative;
+        flex-basis: 150px;
+        
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-style: normal;
+        font-size: 0.8em;
+    
+        max-width: 100%;
+        padding: 1%;
+    }
+
+    
+    li img {
+        max-width: 150px;
+    
+        border-radius: 4%;
+    }
+
+
+}
+@media (max-width: 600px) {
+    li {
+        position: relative;
+        flex-basis: 100px;
+        
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-style: normal;
+        font-size: 0.6em;
+    
+        max-width: 100%;
+        padding: 1%;
+    }
+
+    li img {
+        max-width: 100px;
+    
+        border-radius: 4%;
+    }
+}
+
+footer {
+    height: 20vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    padding: 10px;
+
+    background-color: rgba(128, 128, 128, 0.144);
+}
